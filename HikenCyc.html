@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hike N Cyc</title>
+
+    <!-- this link loads the bootstrap.min.css here file from the internet which has 
+     all the classes of bootstrap like navbar, btn, cards etc -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="HikenCyc.CSS" />
+  </head>
+  <body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Hike N Cyc</a>
+
+        <!-- Button that opens the menu on mobile
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         -->
+        <!-- Menu links -->
+         <!-- class="collapse navbar-collapse" -->
+        <div  id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#plans">Our Plans</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--HERO-->
+    <!-- Content area 1: Heading and paragraph -->
+    <div id="home" class="hero-text" style="background-color: beige;">
+      <h1>Welcome to Hike N Cyc</h1>
+      <p>Ride. Hike. Connect.</p>
+      <a href="#plans" class="btn btn-warning">See Our Plans</a>
+    </div>
+
+    <!-- Content area 2: Carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="about-us.jpeg" alt="About us" />
+        </div>
+
+         <div class="carousel-item active">
+          <img src="HikenCyc.jpeg" alt="Ride and Grow together" />
+        </div>
+
+        <div class="carousel-item">
+          <img src="who-are-we.jpeg" alt="Our ride"/>
+        </div>
+      </div>
+
+      <!-- Previous and Next arrows -->
+       <!-- dat-bs-target and slide are basically data attributes that tell the bootstrap what to do -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!--Reamaining content areas: Three cards -->
+    <div id="plans" class="container cards">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="hike.jpeg" class="card-img-top" alt="Hike" />
+            <div class="card-body">
+              <h5 class="card-title">Saturday Hike</h5>
+              <p class="card-text">Join our one day hike trip in Islamabad. Registration fee is Rs. 400.</p>
+              <a href="#" class="btn btn-success">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+               <img src="our-ride.jpeg" class="card-img-top" alt="Cycling" />
+            <div class="card-body">
+              <h5 class="card-title">Sunday Cycling</h5>
+              <p class="card-text">Join our group ride, for example F-8 to Faisal Mosque. Registration fee is Rs. 400.</p>
+              <a href="#" class="btn btn-success">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+               <img src="cycle-rental.jpeg" class="card-img-top" alt="Cycle Rental" />
+            <div class="card-body">
+              <h5 class="card-title">Cycle Rental</h5>
+              <p class="card-text">Don't have a cycle? Rent one for Rs. 1,500 and pick it up on the day of the ride.</p>
+              <a href="#" class="btn btn-success">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer id="contact">
+      <h5>Hike N Cyc</h5>
+      <p>Instagram: @hikencyc | Islamabad, Pakistan</p>
+      <p>&copy; 2026 Hike N Cyc</p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript (bundle already includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
