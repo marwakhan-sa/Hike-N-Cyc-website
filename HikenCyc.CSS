@@ -9,8 +9,8 @@
 .carousel-item img {
   display: block;
   margin: auto;
-  height: 550px;
-  width: 350px;
+  height: 400px;
+  width: 900px;
 }
 
 /* Arrows turn them from white to black so they are visible on a white background */
@@ -23,6 +23,7 @@
 .cards {
   margin-top: 100px;
 }
+
 /* Cards ki chi kam pictures di aghai heights same shu di sara asi all had different heights */
 .card-img-top {
     /* aspect ratio keeps the size of the images in cards the same in all types of screens,
@@ -34,8 +35,30 @@
 /* Footer */
 footer {
   background-color: #212529;
-  color: white;
-  text-align: center;
+  color: whitesmoke;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: auto;   /* auto pushes it to the bottom */
+  width: 100%;
+}
+
+/* About section spacing */
+.about-us {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+/* Why Choose Us section spacing */
+.why-us {
+  margin-top: 100px;
+}
+
+/*  Why People Stick Around(trust) section spacing */
+.trust {
+  margin-top: 100px;
+}
+
+/* FAQ section spacing */
+.faq {
+  margin-top: 100px;
+  margin-bottom: 60px;
 }
